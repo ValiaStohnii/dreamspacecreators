@@ -4,11 +4,11 @@
 h1,
 h2,
 h3 {
-  --font-weight: 600;
+  --font-weight: 700;
 
   overflow: hidden;
   width: fit-content;
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-bold);
   font-size: clamp(2.5rem, 2.2451rem + 1.0458vi, 3.5rem);
 
   @include media(mobile-m) {

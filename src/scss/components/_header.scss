@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  padding: clamp(12px, rem(20), 22px) 0;
+  padding: 20.5px 0;
   width: 100%;
   background-color: var(--color-white);
   transition-property: transform, padding;
@@ -13,5 +13,18 @@
 
   &.hide {
     transform: translateY(-100%);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-black);
+    color: var(--color-green);
+    font-size: 30px;
+    line-height: 39.16px;
+
+    &__img {
+      margin-right: 16px;
+    }
   }
 }

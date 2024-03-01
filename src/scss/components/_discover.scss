@@ -1,0 +1,34 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.discover {
+  padding: 86px 0;
+
+  h2 {
+    margin-bottom: 48px;
+    font-family: var(--font-family-bold);
+    font-size: 36px;
+    line-height: 46.99px;
+    color: var(--color-dark);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    object-fit: contain;
+  }
+}

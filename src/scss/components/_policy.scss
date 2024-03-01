@@ -2,55 +2,51 @@
 @use "../utils/mixins"as*;
 
 .policy {
-  padding: rem(30) 0;
-  line-height: 1.5;
+  padding: 56px 0;
   color: var(--color-black);
 
-  &__inner {
-    max-width: 680px;
-  }
-
   h1 {
-    position: relative;
-    margin: 0 auto rem(32);
-    font-size: clamp(32px, 1.6176rem + 1.3vi, 56px);
-    color: var(--color-tile-800);
+    font-family: var(--font-family-bold);
+    margin-bottom: 48px;
+    font-size: 48px;
+    color: var(--color-text-black);
+    line-height: 62.65px;
   }
 
   h2 {
-    font-family: var(--font-family-primary);
-    font-weight: var(--fw-500);
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    font-family: var(--font-family-bold);
+    font-size: 24px;
+    letter-spacing: 2%;
+    margin-bottom: 16px;
   }
 
   ul {
-    margin-bottom: 30px;
-    padding-left: 15px;
-    font-weight: 600;
+    margin-bottom: 36px;
   }
 
   li {
-    list-style-type: disc;
-    line-height: 1.43;
-    letter-spacing: 0.02em;
+    font-family: var(--font-family-light);
+    font-size: 20px;
+    line-height: 26.1px;
+    letter-spacing: 2%;
 
     &:not(:last-child) {
       margin-bottom: 3px;
     }
-  }
 
-  p {
-    font-size: 20px;
-
-    &:not(:last-child) {
-      margin-bottom: rem(25);
+    &::before {
+      content: '✓';
     }
   }
 
-  a {
-    text-decoration: underline;
-    color: var(--color-tile-800);
+  p {
+    font-family: var(--font-family-light);
+    font-size: 20px;
+    line-height: 26.1px;
+    letter-spacing: 2%;
+
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
   }
 }

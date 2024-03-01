@@ -1,0 +1,30 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.crafting {
+  padding: 56px 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 48px;
+    font-family: var(--font-family-bold);
+    font-size: 36px;
+    line-height: 46.99px;
+    color: var(--color-dark);
+  }
+
+  p {
+    font-family: var(--font-family-primary);
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-dark);
+  }
+
+  &__image {
+    margin-right: 48px;
+  }
+}
