@@ -7,7 +7,7 @@
     "build": "parcel build ./src/*.html ./src/scss/*.scss ./src/index.js ./src/images/*.* ./src/images/*/*.* ./src/images/*/*/*.* ./src/images/icons/*.svg ./src/images/crypto-icons/*.svg ./src/icons/*.*  ./src/*.png ./src/animations/*.*  --no-source-maps --no-optimize --no-content-hash --public-url ./ "
   },
   "keywords": [],
-  "author": "Orest Polusyn",
+  "author": "ValiaStohnii",
   "license": "ISC",
   "devDependencies": {
     "@lottiefiles/lottie-player": "^1.7.1",
