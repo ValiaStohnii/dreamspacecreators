@@ -4,6 +4,10 @@
 .featured {
   padding: 56px 0;
 
+  @include media(tablet-wide) {
+    padding: 30px 0;
+  }
+
   h2 {
     margin-bottom: 48px;
     font-family: var(--font-family-bold);
@@ -17,7 +21,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 
-    @include media(tablet) {
+    @include media(tablet-wide) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -75,17 +79,21 @@
         &:focus .featured__content {
           cursor: pointer;
           opacity: 1;
-          height: 300px;
+          min-height: 300px;
           border-radius: 23px;
           background: var(--color-transparent-dark);
           text-align: center;
           display: flex;
           align-items: center;
+
+          @include media(tablet) {
+            opacity: 0;
+          }
         }
       }
 
       &__content {
-        width: 584px;
+        max-width: 584px;
         position: absolute;
         padding: 26px 24px;
         top: 0;

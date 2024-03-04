@@ -42,7 +42,7 @@
     }
 
 
-    @include media(tablet) {
+    @include media(tablet-wide) {
       margin: 0 auto;
     }
   }
@@ -55,7 +55,7 @@
         margin-right: 0;
       }
 
-      @include media(tablet) {
+      @include media(tablet-wide) {
         margin-right: 10px;
       }
     }
@@ -74,7 +74,7 @@
       color: var(--color-green);
     }
 
-    @include media(tablet) {
+    @include media(tablet-wide) {
       font-size: 13px;
     }
   }
@@ -91,7 +91,7 @@
         margin: 0 auto 10px auto !important;
       }
 
-      @include media(tablet) {
+      @include media(tablet-wide) {
         margin-right: 10px;
       }
     }

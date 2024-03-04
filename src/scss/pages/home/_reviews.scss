@@ -37,7 +37,7 @@
     display: flex;
     align-items: flex-end;
 
-    @include media(tablet) {
+    @include media(tablet-wide) {
       flex-wrap: wrap;
     }
   }
@@ -53,7 +53,7 @@
     }
 
     &:first-child{
-      @include media(tablet) {
+      @include media(tablet-wide) {
         margin: 0 50% 20px 0;
       }
       @include media(mobile-l) {
@@ -93,7 +93,7 @@
       color: var(--color-white);
       padding: 24px;
 
-      @include media(tablet) {
+      @include media(tablet-wide) {
         padding: 10px;
         font-size: 13px;
       }

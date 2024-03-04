@@ -10,14 +10,12 @@
     margin-bottom: 12px;
     font-family: var(--font-family-bold);
     font-size: 36px;
-    line-height: 46.99px;
     color: var(--color-dark);
   }
 
   h3 {
     font-family: var(--font-family-bold);
     font-size: 24px;
-    line-height: 24px;
     color: var(--color-dark);
     margin-bottom: 24px;
   }
@@ -25,7 +23,6 @@
   p {
     font-family: var(--font-family-light);
     font-size: 20px;
-    line-height: 30px;
     color: var(--color-dark);
     margin-bottom: 48px;
   }
@@ -55,7 +52,6 @@
   &__list {
     p {
       font-size: 14px;
-      line-height: 18.27px;
       margin-bottom: 0;
     }
   }
@@ -72,7 +68,6 @@
   &__number {
     font-family: var(--font-family-light);
     font-size: 48px;
-    line-height: 62.65px;
     color: var(--color-green);
     margin-bottom: 24px;
   }
@@ -90,7 +85,7 @@
       column-gap: 0;
 
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 8px;
       }
 
       &:nth-child(even) {
@@ -106,7 +101,16 @@
     }
 
     &__content {
-      padding: 20px;
+      padding: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    &__number {
+      font-size: 24px;
+      margin-bottom: 12px;
     }
   }
 }

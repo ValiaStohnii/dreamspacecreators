@@ -5,6 +5,10 @@
   $root: &;
   padding: 48px 0;
 
+  @include media(tablet-wide) {
+    padding: 30px 0;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -16,6 +20,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto;
+
+    @include media(tablet-wide) {
+      background-position: 50% 50%;
+      min-height: 260px;
+    }
   }
 
   h1 {
@@ -56,13 +65,17 @@
         margin: 0;
         text-align: start;
         align-items: start;
+
+        @include media(mobile-s) {
+          padding-left: 20px;
+        }
       }
 
       &__inner {
         min-height: 646px;
         background-size: cover;
 
-        @include media(tablet) {
+        @include media(tablet-wide) {
           min-height: 400px;
         }
       }
@@ -85,12 +98,6 @@
   &--about {
     .hero__content {
       max-width: unset;
-    }
-
-    .hero__inner {
-      @include media(tablet) {
-        min-height: 260px;
-      }
     }
   }
 

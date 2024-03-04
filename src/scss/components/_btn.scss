@@ -16,7 +16,7 @@
         color: var(--color-white);
         border: none;
 
-        @include media(tablet) {
+        @include media(tablet-wide) {
             padding: 5px;
             font-size: 13px;
         }
@@ -27,7 +27,7 @@
         color: var(--color-green);
         border: 2px solid var(--color-green);
 
-        @include media(tablet) {
+        @include media(tablet-wide) {
             padding: 5px;
             font-size: 13px;
         }

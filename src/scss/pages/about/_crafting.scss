@@ -26,19 +26,26 @@
     margin-right: 48px;
   }
 
-  @include media(tablet) {
+  @include media(tablet-wide) {
     padding: 30px 0;
 
-    &__content {
-      flex-direction: column;
-    }
-
     h2 {
-      font-size: 24px;
+      margin-bottom: 24px;
     }
 
     p {
       font-size: 16px;
+    }
+
+    &__image {
+      max-height: 300px;
+      border-radius: 24px;
+    }
+  }
+
+  @include media(mobile-s) {
+    &__content {
+      flex-direction: column;
     }
 
     &__image {

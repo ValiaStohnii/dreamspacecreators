@@ -8,7 +8,6 @@
     margin-bottom: 48px;
     font-family: var(--font-family-bold);
     font-size: 36px;
-    line-height: 46.99px;
     color: var(--color-dark);
   }
 
@@ -30,5 +29,20 @@
   &__image {
     overflow: hidden;
     object-fit: contain;
+  }
+
+  @include media(mobile-l) {
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  @include media(tablet) {
+    padding: 30px 0;
   }
 }

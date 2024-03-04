@@ -12,7 +12,7 @@
     width: 100%;
     justify-content: space-between;
 
-    @include media(tablet) {
+    @include media(tablet-wide) {
       flex-wrap: wrap;
     }
   }
@@ -73,7 +73,7 @@
     }
   }
 
-  @include media(tablet) {
+  @include media(tablet-wide) {
     &__list {
       display: flex;
     }

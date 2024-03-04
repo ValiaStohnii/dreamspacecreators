@@ -55,4 +55,47 @@
       margin-bottom: 48px;
     }
   }
+
+  @include media(tablet-wide) {
+    padding: 30px 0;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__imgs{
+      min-width: 400px;
+      max-width: 400px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__imgs{
+      background-size: contain;
+      max-height: 300px;
+      max-width: 300px;
+      min-width: 300px;
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
 }
