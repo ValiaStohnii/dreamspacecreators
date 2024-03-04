@@ -44,6 +44,8 @@
 
   &.hero--home {
     padding: 0;
+    border-radius: 64px;
+    overflow: hidden;
     .hero {
       &__content {
         z-index: 1;
@@ -57,7 +59,12 @@
       }
 
       &__inner {
-        height: 646px;
+        min-height: 646px;
+        background-size: cover;
+
+        @include media(tablet) {
+          min-height: 400px;
+        }
       }
     }
 
@@ -78,6 +85,12 @@
   &--about {
     .hero__content {
       max-width: unset;
+    }
+
+    .hero__inner {
+      @include media(tablet) {
+        min-height: 260px;
+      }
     }
   }
 

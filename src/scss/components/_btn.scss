@@ -15,11 +15,21 @@
         background-color: var(--color-green);
         color: var(--color-white);
         border: none;
+
+        @include media(tablet) {
+            padding: 5px;
+            font-size: 13px;
+        }
     }
 
     &--simple {
         background-color: var(--color-white);
         color: var(--color-green);
         border: 2px solid var(--color-green);
+
+        @include media(tablet) {
+            padding: 5px;
+            font-size: 13px;
+        }
     }
 }

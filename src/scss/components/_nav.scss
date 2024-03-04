@@ -34,10 +34,16 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+    margin-right: 77px;
 
     @include media(mobile-l) {
       z-index: -1;
       flex-direction: column;
+    }
+
+
+    @include media(tablet) {
+      margin: 0 auto;
     }
   }
 
@@ -47,6 +53,10 @@
 
       @include media(mobile-l) {
         margin-right: 0;
+      }
+
+      @include media(tablet) {
+        margin-right: 10px;
       }
     }
 
@@ -63,6 +73,10 @@
     &.true {
       color: var(--color-green);
     }
+
+    @include media(tablet) {
+      font-size: 13px;
+    }
   }
 
   .btn {
@@ -72,12 +86,14 @@
 
     &--simple {
       margin-right: 24px;
-    }
-  }
 
-  @include media(mobile-l) {
-    .logo {
-      max-width: 58px;
+      @include media(mobile-l) {
+        margin: 0 auto 10px auto !important;
+      }
+
+      @include media(tablet) {
+        margin-right: 10px;
+      }
     }
   }
 }

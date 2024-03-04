@@ -26,5 +26,9 @@
     &__img {
       margin-right: 16px;
     }
+
+    @include media(tablet) {
+      max-width: 250px;
+    }
   }
 }

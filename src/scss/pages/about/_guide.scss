@@ -32,28 +32,16 @@
     align-items: center;
   }
 
-  &__imgs {
-    &:not(:last-child){
-      margin-right: 41px;
-    }
-
-    &:last-child {
-      margin-right: 48px;
-    }
-  }
-
-  &__img{
+  &__imgs{
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
     background-position: 0 0;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-
-    &:not(:last-child){
-      margin-bottom: 34px;
-    }
+    min-width: 691px;
+    margin-right: 48px;
   }
 
   .overlay {

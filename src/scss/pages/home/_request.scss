@@ -13,7 +13,7 @@
     font-family: var(--font-family-medium);
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
   }
 
   &__form {
@@ -146,16 +146,33 @@
       font-family: var(--font-family-bold);
       font-size: 86px;
       color: var(--color-dark);
-      line-height: 86px;
       margin-bottom: 0;
+
+      @include media(mobile-l) {
+        font-size: 60px;
+      }
+
+      @include media(mobile-s) {
+        font-size: 40px;
+      }
     }
 
     .request-btn-home {
-      width: 222px;
-      height: 222px;
+      min-width: 222px;
+      min-height: 222px;
       border-radius: 50%;
       font-size: 24px;
       rotate: (15deg);
+
+      @include media(mobile-l) {
+        min-width: 180px;
+        min-height: 180px;
+      }
+
+      @include media(mobile-s) {
+        min-width: 150px;
+        min-height: 150px;
+      }
     }
 
     p {
